@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded',function(){
  showPerson(); 
 });
 
-// show next person
+//show person
 function showPerson(){
   const item=reviews[currentItem];
   img.src=item.img;
@@ -74,6 +74,8 @@ nexBtn.addEventListener('click',function(){
   }
   showPerson();
 });
+
+//show next person
 prevBtn.addEventListener('click',function(){
   currentItem--;
   if(currentItem<0){
